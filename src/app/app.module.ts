@@ -7,6 +7,7 @@ import { routing, Components, Screens } from './app.routing';
 
 // Plugins
 import { TextMaskModule } from 'angular2-text-mask';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TextMaskModule } from 'angular2-text-mask';
   imports: [
     BrowserModule,
     routing,
-    TextMaskModule
+    TextMaskModule,
+    Angular2FontawesomeModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
     {title: "Orçamento", route: "/orcamento"}
   ]
 
-  @Input() logo:string = "asdasd";
+  @Input() logo:string = "../../../assets/logo-menu.png";
   @Input() bg:string = "";
 
   private flag:boolean = false;
@@ -30,9 +30,11 @@ export class MenuComponent implements OnInit {
 
   public toggleMenu(){
     if(this.flag){
+      this.back.nativeElement.style.height = "8vh";
       this.menu.nativeElement.style.display = "none";
     }else{
-      this.menu.nativeElement.style.display = "inline-block";
+      this.back.nativeElement.style.height = "30vh";
+      setTimeout( ()=>{ this.menu.nativeElement.style.display = "block" } , 250);
     }
     this.flag = !this.flag;
   }
@@ -40,7 +42,8 @@ export class MenuComponent implements OnInit {
   public setBackground(){
     if(this.bg != "" && screen.width > 418){
       this.back.nativeElement.style.backgroundImage = this.bg;
-      this.back.nativeElement.style.backgroundSize = "auto 100%";
+      this.back.nativeElement.style.backgroundSize = "100% auto";
+      this.back.nativeElement.style.backgroundRepeat = "no-repeat";
       this.back.nativeElement.style.backgroundPosition = "top";
     }
   }

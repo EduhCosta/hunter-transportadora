@@ -1,9 +1,13 @@
-<nav class="nav-container container" #setBack>
-  <div class="logo">
-    <a href="/home"><img [src]="logo" alt="Logo"/></a>
-  </div>  
-  <button class="btn btn-menu" (click)="toggleMenu()">Menu</button>
-  <ul class="menu" #Menu>
-    <li *ngFor="let item of pages" ><a href="{{item.route}}">{{item.title}}</a></li>
-  </ul>  
+<nav>
+  <div class="container">
+    <div class="nav-container" #setBack>
+      <div class="logo">
+        <a href="/home"><img [src]="logo" alt="Logo"/></a>
+      </div>
+      <button class="btn btn-menu" (click)="toggleMenu()"><fa [name]="'bars'" [size]=2></fa></button>
+      <ul class="menu" #Menu>
+        <li *ngFor="let item of pages"><a href="{{item.route}}">{{item.title}}</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>

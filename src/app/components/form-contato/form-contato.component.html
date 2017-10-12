@@ -1,35 +1,38 @@
-<section class="container">
+<section style="border-bottom: 2px solid #7c7c7c;">
+  <div class="container">
 
-  <div class="second-container">
+    <div class=" container second-container">
 
-    <h2 class="title-section">Entre em contato</h2>
+      <h2 class="title-section">Entre em contato</h2>
 
-    <img src="../../../assets/contact-banner.png" alt="" class="banner">
+      <img src="../../../assets/contact-banner.png" alt="" class="banner">
 
-    <h3 class="call-section">Nos deixe uma mensagem, dúvida ou sugestão</h3>
+      <h3 class="call-section">Nos deixe uma mensagem, dúvida ou sugestão</h3>
 
-    <form novalidate="novalidate" action="fomrspree.io/email@algo.com">
-      <div class="form-group">
-        <label for="name">Nome :</label>
-        <input type="text" id="name" name="name" class="form-control" >
-      </div>
-      <div class="form-group">
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" class="form-control" >
-      </div>
-      <div class="form-group">
-        <label for="fone">Telefone :</label>
-        <input type="text" [textMask]="{mask:phoneMask}" id="fone" name="fone" class="form-control" value="" (keypress)="checkSizeInput()" #fone>
-      </div>
-      <div class="form-group">
-        <label for="message">Mensagem :</label>
-        <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
-      </div>
-      <div class="fomr-group">
-        <input type="submit" value="Enviar" class="btn btn-primary">
-      </div>
-    </form>
+      <form novalidate="novalidate" action="fomrspree.io/email@algo.com">
+        <div class="form-group">
+          <label for="name">Nome :</label>
+          <input type="text" id="name" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="fone">Telefone :</label>
+          <input type="text" [textMask]="{mask:phoneMask}" id="fone" name="fone" class="form-control" value="" (keypress)="checkSizeInput()"
+            #fone>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem :</label>
+          <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <div class="fomr-group">
+          <input type="submit" value="Enviar" class="btn btn-primary">
+        </div>
+      </form>
+
+    </div>
 
   </div>
-
 </section>
