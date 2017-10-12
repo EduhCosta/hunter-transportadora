@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
+import { Router } from "@angular/router";
+
 @Component({
   selector: 'Menu',
   templateUrl: './menu.component.html',
@@ -11,10 +13,10 @@ export class MenuComponent implements OnInit {
   @ViewChild('setBack') back: ElementRef;
 
   @Input() pages: Array<any> = [
-    {title: "Home", route: "/home"},
-    {title: "Contato", route: "/contato"},
-    {title: "Sobre", route: "/sobre"},
-    {title: "Orçamento", route: "/orcamento"}
+    {title: "Home", route: "home"},
+    {title: "Contato", route: "contato"},
+    {title: "Sobre", route: "sobre"},
+    {title: "Orçamento", route: "orcamento"}
   ]
 
   @Input() logo:string = "../../../assets/logo-menu.png";
@@ -22,7 +24,7 @@ export class MenuComponent implements OnInit {
 
   private flag:boolean = false;
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
     this.setBackground();
@@ -46,6 +48,10 @@ export class MenuComponent implements OnInit {
       this.back.nativeElement.style.backgroundRepeat = "no-repeat";
       this.back.nativeElement.style.backgroundPosition = "top";
     }
+  }
+
+  redirect(url:string){
+    this.router.navigate([url]);
   }
 
 }

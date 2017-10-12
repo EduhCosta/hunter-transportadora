@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NossoTrabalhoComponent implements OnInit {
 
-  private caracs: Array<any> = [
+  public caracs: Array<any> = [
     {
       imgMobile: "../../../assets/icon1.png",
       imgDesk: "../../../assets/icon1-white.png",

@@ -21,7 +21,7 @@ import { OrcamentoScreenComponent } from './screens/orcamento/orcamento.componen
 
 
 const ROUTER:Routes = [
-    {path: "", component: OrcamentoScreenComponent},
+    {path: "", component: HomeScreenComponent},
     {path: "home", component: HomeScreenComponent},
     {path: "contato", component: ContatoScreenComponent},
     {path: "sobre", component: SobreScreenComponent},

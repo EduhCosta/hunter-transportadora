@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class FormContatoComponent implements OnInit {
 
-  private phoneMask: Array<any> = [];
+  public phoneMask: Array<any> = [];
  
   @ViewChild('fone') phone:ElementRef;
 
@@ -18,7 +18,7 @@ export class FormContatoComponent implements OnInit {
   }
 
   // Máscara para o telefone
-  private checkSizeInput(){
+  public checkSizeInput(){
     if(this.phone.nativeElement.value[6] != 9 ){
       this.phoneMask  = ['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
     }else{

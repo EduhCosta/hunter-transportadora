@@ -14,7 +14,7 @@ export class FacaOrcamentoComponent implements OnInit {
   ngOnInit() {
   }
 
-  private redirect(url:string){
+  public redirect(url:string){
     this.route.navigate([url]);
   }
 
