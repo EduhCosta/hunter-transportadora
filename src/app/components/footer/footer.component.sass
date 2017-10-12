@@ -1,0 +1,49 @@
+@import "../../_variables.sass"
+
+.container
+    background-color: #000
+    height: fit-content
+    display: block
+    position: relative
+    color: #FFF
+    .sub-container
+        padding: 5px 15px 5px 15px
+        text-indent: 1em
+        .title
+            color: $red-hunter
+        p
+            color: #FFF
+            line-height: .8em
+            font-size: 1em
+        .icon
+            display: block
+            position: relative
+            height: 40px
+            width: 40px
+            padding: 5px
+            margin-left: 1em
+            background-color: #FFF
+            border-radius: 25px
+            overflow: hidden
+    .social
+        display: flex
+        flex-wrap: wrap
+        h3
+            flex-grow: 1
+            width: 100%
+    .end-footer
+        margin-top: 1em
+        background-color: $my-gray
+        padding: 8px
+        text-align: center
+        width: 100% !important
+
+
+@media screen and (max-width:418px)
+    .container
+        text-align: center
+        .sub-container
+            text-indent: 0
+        .social
+            justify-content: center
+                

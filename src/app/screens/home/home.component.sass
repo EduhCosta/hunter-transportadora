@@ -1,0 +1,46 @@
+@import "../../_variables.sass"
+
+.banner
+    background-color: green
+    height: $height-section
+    background-image: url("../../../assets/banner01.png")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    .desc-mobile
+        display: none
+    .btnMobile
+        display: none
+
+@media screen and (max-width:418px)
+    .container
+        padding: 0
+    .banner
+        background-image: url("../../../assets/caminhao.jpg")
+        background-size: auto 100%
+        background-repeat: no-repeat
+        .desc-mobile
+            display: block
+            color: $red-hunter
+            margin-top: 8vh
+            padding: 10px
+            text-align: right
+            h3
+                margin: 0
+                padding: 3px
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 14pt
+        .btnMobile
+            display: block
+            position: relative
+            text-transform: uppercase
+            font-weight: bold
+            padding: 10px
+            background-color: $red-hunter
+            border: none
+            color: #FFF
+            margin-left: 50%
+            width: 34vw
+            left: -17vw
+            margin-top: 42vh
+

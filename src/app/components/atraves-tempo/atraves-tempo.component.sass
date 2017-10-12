@@ -1,0 +1,36 @@
+@import "../../_variables.sass"
+
+.body
+    border-bottom: 2px solid $my-gray
+    height: $height-section
+    display: block
+    position: relative
+    padding: 2em 5em 4em 5em
+    background-color:  #FFF
+    .title
+        color: $red-secondary
+        margin-bottom: 1em
+    .image
+        height: 100%
+        padding: auto 1em
+    .text 
+        display: block
+        position: relative
+        p
+            color: $blue-hunter
+            font-size: 20px
+            text-align: justify
+            text-indent: 2em
+        .btn-hunter
+            background-color: $blue-hunter
+            color: #FFF
+            margin-top: 1em
+            float: right
+            font-size: 22px
+            text-transform: uppercase
+            border-radius: 0
+            padding: .2em 1em .2em 1em
+
+@media screen and (max-width:418px)
+    .body
+        display: none

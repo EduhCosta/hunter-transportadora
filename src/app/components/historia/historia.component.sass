@@ -1,0 +1,46 @@
+@import "../../_variables.sass"
+
+.container
+    background-color: #FFF
+    padding: 1em 10em 1em 10em
+    .title
+        text-transform: uppercase
+        font-size: 20px
+        color: $red-secondary
+    .thumbnail
+        width: 500px
+        display: block
+        float: left
+        border: none
+        padding: 2em 2em 2em 0
+    .text
+        p
+            font-size: 17px
+            text-align: justify
+            margin: 0
+            line-height: 26px
+            text-indent: 3em
+            margin-bottom: 1em
+            color: $blue-hunter
+    .span
+        color: $red-secondary
+        text-transform: uppercase
+        font-size: 16px
+        font-weight: bold
+
+@media screen and (max-width:418px)
+    .container
+        margin-top: 8vh
+        padding: 1em 2em 2em 2em
+        .title
+            padding-bottom: .5em
+            font-size: 18px
+            font-weight: bold
+        .text
+            p   
+                line-height: 20px
+                font-size: 14px
+        .thumbnail
+            display: none
+        .span
+            display: none

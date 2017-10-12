@@ -1,0 +1,67 @@
+@import "../../_variables.sass"
+
+.mobile
+    display: none
+.container-card
+    width: 100%
+    .desk
+        .icon-desk
+            height: 100px
+            width: 100px
+            display: block
+            border-radius: 50px
+            margin-left: 50%
+            transform: translateX(-50px)
+        .block
+            margin-top: 1em
+            h3
+                height: 60px
+                border-bottom: 1px solid #ffffff
+                text-align: center
+                line-height: 60px
+                padding: 0
+                margin: 0
+            p
+                padding: 2em 2em 2em 2em
+                text-align: center
+
+@media screen and (max-width: 418px)
+    .desk
+        display: none
+    .mobile
+        display: block
+        padding: 1em
+        .block-mobile
+            padding: .5em 0 .5em .5em
+            .icon-mobile
+                display: block
+                width: 70px
+                height: 70px
+                border-radius: 35px
+                background-color: #FFFFFF
+                position: absolute
+                margin: .5em 0 .5em .5em 
+                padding: .3em
+            .title-container
+                float: right
+                border-bottom: 1px solid rgba(#FFFFFF, 0.6)
+                text-align: right
+                height: 60px
+                width: 50%
+                right: 0
+                padding-right: 1em
+                h3
+                    font-size: 20px
+                    line-height: 60px
+                    margin: 0
+                    padding: 0
+            p
+                display: block
+                position: relative
+                width: 100%
+                padding: 80px 1em 1em .5em
+                text-align: right
+                text-indent: 2em
+                    
+    
+        

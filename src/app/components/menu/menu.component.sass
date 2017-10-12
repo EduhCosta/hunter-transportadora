@@ -1,0 +1,75 @@
+.nav-container
+    display: flex
+    position: relative
+    height: 10vh
+    padding: 3vh
+    z-index: 9999
+    .logo
+        display: block
+        position: relative
+        margin: 0
+        padding: 0
+        vertical-align: middle
+        height: 4vh
+        flex-grow: 1
+        img
+            height: 10vh
+            transform: translateY(-2vh)
+    .btn-menu
+        display: none
+    .menu
+        list-style: none
+        display: flex
+        justify-content: flex-end
+        font-family: "Muli"
+        font-weight: bold
+        letter-spacing: 1px
+        li
+            display: block
+            position: relative
+            margin: 1vh
+            height: 2vh
+            padding: 0
+            vertical-align: middle
+        .actived
+            color: red       
+        a
+            color: #333
+        a:hover
+            text-decoration: none
+            border-bottom: 2px solid #333
+            padding-bottom: 2px
+            
+
+@media screen and (max-width: 418px)
+    .nav-container
+        position: relative
+        padding: 0
+        margin: 0
+        height: 8vh
+        border-bottom: 2px solid red
+        background-color: #fff
+        width: 100%
+        position: fixed
+        .logo
+            flex-grow: 1
+            margin: auto auto
+            img
+                height: 45px
+                margin-left: 50%
+                transform: translate(-20px, -.5em)
+        .btn-menu
+            display: block
+            position: absolute
+        .menu
+            margin-top: 8vh
+            display: none
+            width: 100%
+            padding: 0
+            position: absolute
+            li
+                padding: 0
+                text-align: center
+                height: 4vh
+                line-height: 4vh
+                width: auto

@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { routing, Components, Screens } from './app.routing'
+import { routing, Components, Screens } from './app.routing';
+
+// Plugins
+import { TextMaskModule } from 'angular2-text-mask';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,8 @@ import { routing, Components, Screens } from './app.routing'
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    TextMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
